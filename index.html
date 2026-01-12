@@ -1,0 +1,2220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisualX</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="./assets/favicon logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav
+        class="fixed top-0 z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur">
+        <a href="#!">
+            <img class="h-8.5 w-auto" src="./assets/full logo.png" alt="logo" />
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 transition duration-500">
+            <a href="#hero" class="text-white hover:text-pink-500">Home</a>
+
+            <a href="#about" class="text-white hover:text-pink-500 transition">
+                About
+            </a>
+
+            <a href="#work" class="text-white hover:text-pink-500 transition">
+                Work
+            </a>
+
+            <a href="#contact" class="text-white hover:text-pink-500 transition">
+                Contact
+            </a>
+        </div>
+
+        <!-- Desktop button -->
+        <a href="mailto:ramudowlapalli6@gmail.com?subject=Video%20Editing%20Project&body=Hi%20Ramu,%0A%0AI%20would%20like%20to%20discuss%20a%20video%20editing%20project."
+            target="_blank"
+            class="hidden md:block px-6 py-2.5 bg-pink-600 hover:bg-pink-700 active:scale-95 transition-all rounded-full">
+            Let's Work
+        </a>
+
+        <!-- Mobile button -->
+        <a href="https://www.youtube.com/@YourChannelName" target="_blank" class="md:hidden active:scale-90 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </a>
+
+    </nav>
+    <div id="mobile-navlinks"
+        class="fixed inset-0 z-100 bg-black/40 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-400 -translate-x-full">
+        <a href="#hero">
+            Home
+        </a>
+        <a href="#work">
+            Work
+        </a>
+        <a href="#about">
+            About
+        </a>
+        <a href="#contact">
+            Contact
+        </a>
+        <button id="close-menu"
+            class="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-pink-600 hover:bg-pink-700 transition text-white rounded-md flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-x-icon lucide-x">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="relative flex flex-col items-center justify-center px-4 md:px-16 lg:px-24 xl:px-32">
+            <div class="absolute top-30 -z-10 left-1/4 size-72 bg-pink-600 blur-[300px]"></div>
+
+            <!-- Badge -->
+            <a href="#home"
+                class="group flex items-center gap-2 rounded-full p-1 pr-3 mt-44 text-pink-100 bg-pink-200/15">
+                <span class="bg-pink-800 text-white text-xs px-3.5 py-1 rounded-full">
+                    SHOWREEL
+                </span>
+                <p class="flex items-center gap-1">
+                    <span>Watch my latest video work</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-right group-hover:translate-x-0.5 transition duration-300">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                </p>
+            </a>
+
+            <!-- Main Heading -->
+            <h1 class="text-5xl/17 md:text-6xl/21 font-medium max-w-2xl text-center">
+                Crafting powerful visuals as a
+                <span class="move-gradient px-3 rounded-xl text-nowrap">
+                    Video Editor
+                </span>
+            </h1>
+
+            <!-- Sub Text -->
+            <p class="text-base text-center text-slate-200 max-w-lg mt-6">
+                High-impact edits, motion graphics, and AI-powered videos designed to captivate audiences and elevate
+                brands.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex items-center gap-4 mt-8">
+
+                <!-- Download Resume -->
+                <a href="/assets/Ramu-Dowlapalli-Resume.pdf" download
+                    class="bg-pink-600 hover:bg-pink-700 text-white rounded-full px-7 h-11 flex items-center gap-2 transition">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-download">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <path d="M7 10l5 5 5-5" />
+                        <path d="M12 15V3" />
+                    </svg>
+
+                    <span>Download Resume</span>
+                </a>
+
+                <!-- Watch Showreel -->
+                <button
+                    class="flex items-center gap-2 border border-pink-900 hover:bg-pink-950/50 transition rounded-full px-6 h-11">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-video">
+                        <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+                        <rect x="2" y="6" width="14" height="12" rx="2" />
+                    </svg>
+
+                    <span>Watch Showreel</span>
+                </button>
+
+            </div>
+
+            <!-- Highlights -->
+            <div class="flex flex-wrap justify-center items-center gap-4 md:gap-14 mt-12">
+                <p class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-check size-5 text-pink-600">
+                        <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                    <span class="text-slate-400">Cinematic storytelling</span>
+                </p>
+
+                <p class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-check size-5 text-pink-600">
+                        <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                    <span class="text-slate-400">Motion graphics & AI edits</span>
+                </p>
+
+                <p class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-check size-5 text-pink-600">
+                        <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                    <span class="text-slate-400">Fast delivery & clean visuals</span>
+                </p>
+            </div>
+
+            <!-- Showcase Image / Video -->
+            <img src="./assets/hero-section-showcase.png" alt="video editor portfolio showcase"
+                class="w-full max-w-4xl mt-16 h-[220px] md:h-[300px] lg:h-[360px] object-cover rounded-[15px]" />
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="px-4 md:px-16 lg:px-24 xl:px-32 scroll-mt-20">
+        <!-- Section Label -->
+        <p
+            class="text-center font-medium text-pink-600 mt-28 px-10 py-2 rounded-full bg-pink-950/70 border border-pink-800 w-max mx-auto">
+            Expertise
+        </p>
+
+        <!-- Heading -->
+        <h3 class="text-3xl font-semibold text-center mx-auto mt-4">
+            What I bring to your videos
+        </h3>
+
+        <!-- Subheading -->
+        <p class="text-slate-300 text-center mt-2 max-w-xl mx-auto">
+            High-quality editing, motion graphics, and AI-driven workflows to elevate your content.
+        </p>
+
+        <!-- Feature Cards -->
+        <div class="flex flex-wrap items-center justify-center gap-6 md:gap-4 mt-16 px-6">
+            <div class="p-6 rounded-xl space-y-4 border border-slate-800 bg-slate-950 max-w-80 w-full">
+                <img alt="Fast turnaround" src="./assets/zap-icon.svg">
+                <h3 class="text-base font-medium text-white">Fast turnaround</h3>
+                <p class="text-slate-400 line-clamp-2 pb-4">
+                    Efficient editing workflows ensure quick delivery without compromising quality.
+                </p>
+            </div>
+
+            <div class="p-px rounded-[13px] bg-gradient-to-br from-pink-600 to-slate-800">
+                <div class="p-6 rounded-xl space-y-4 border border-slate-800 bg-slate-950 max-w-80 w-full">
+                    <img alt="Cinematic quality" src="./assets/thumb-icon.svg">
+                    <h3 class="text-base font-medium text-white">Cinematic quality</h3>
+                    <p class="text-slate-400 line-clamp-2 pb-4">
+                        Clean cuts, color grading, sound design, and motion for a premium visual feel.
+                    </p>
+                </div>
+            </div>
+
+            <div class="p-6 rounded-xl space-y-4 border border-slate-800 bg-slate-950 max-w-80 w-full">
+                <img alt="AI-powered editing" src="./assets/shape-icon.svg">
+                <h3 class="text-base font-medium text-white">AI-powered editing</h3>
+                <p class="text-slate-400 line-clamp-2 pb-4">
+                    Smart tools for upscaling, enhancements, automation, and faster production.
+                </p>
+            </div>
+        </div>
+
+        <!-- Showcase Section -->
+        <div class="features-section">
+            <div class="pink-glow"></div>
+
+            <p class="features-text">
+                I help brands, creators, and startups tell powerful stories through engaging visuals,
+                motion graphics, and AI-enhanced video editing.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-main">
+                    <div class="image-wrapper large">
+                        <img src="./assets/features-showcase-1.jpg" alt="video editing showcase" />
+                    </div>
+                </div>
+
+                <div class="feature-side">
+                    <div class="image-wrapper small">
+                        <img src="./assets/features-showcase-2.jpg" alt="motion graphics showcase" />
+                    </div>
+
+                    <h3>Visuals that engage and convert</h3>
+
+                    <p>
+                        Every frame is designed to capture attention, communicate clearly,
+                        and leave a lasting impact.
+                    </p>
+
+                    <a href="#work" class="view-work">
+                        View my work →
+                    </a>
+                </div>
+            </div>
+        </div>
+        <style>
+            /* ===============================
+   FEATURES SECTION
+================================ */
+            .features-section {
+                margin-top: 10rem;
+                position: relative;
+                max-width: 1100px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0 1.25rem;
+            }
+
+            /* Pink glow */
+            .pink-glow {
+                position: absolute;
+                top: -40px;
+                left: -80px;
+                width: 400px;
+                height: 400px;
+                background: rgba(236, 72, 153, 0.4);
+                filter: blur(120px);
+                border-radius: 50%;
+                z-index: -1;
+            }
+
+            /* Text */
+            .features-text {
+                color: #cbd5e1;
+                font-size: 1.1rem;
+                max-width: 650px;
+            }
+
+            /* Grid */
+            .features-grid {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 2.5rem;
+                margin-top: 2rem;
+            }
+
+            /* Image wrappers */
+            .image-wrapper {
+                overflow: hidden;
+                border-radius: 24px;
+            }
+
+            .image-wrapper.large {
+                height: 100%;
+            }
+
+            .image-wrapper.small {
+                height: 260px;
+            }
+
+            /* Images */
+            .image-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+
+            .image-wrapper:hover img {
+                transform: scale(1.05);
+            }
+
+            /* Side content */
+            .feature-side h3 {
+                margin-top: 1.5rem;
+                font-size: 1.5rem;
+                color: #e5e7eb;
+            }
+
+            .feature-side p {
+                margin-top: 0.75rem;
+                color: #cbd5e1;
+                line-height: 1.6;
+            }
+
+            /* Link */
+            .view-work {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.4rem;
+                margin-top: 1rem;
+                color: #ec4899;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s ease, transform 0.3s ease;
+            }
+
+            .view-work:hover {
+                color: #f472b6;
+                transform: translateX(4px);
+            }
+
+            /* ===============================
+   RESPONSIVE BREAKPOINTS
+================================ */
+
+            /* Tablet */
+            @media (max-width: 900px) {
+                .features-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .image-wrapper.small {
+                    height: 240px;
+                }
+            }
+
+            /* Mobile */
+            @media (max-width: 480px) {
+                .features-section {
+                    margin-top: 6rem;
+                }
+
+                .features-text {
+                    font-size: 1rem;
+                }
+
+                .feature-side h3 {
+                    font-size: 1.3rem;
+                }
+
+                .image-wrapper.small {
+                    height: 200px;
+                }
+            }
+        </style>
+
+
+    </section>
+
+    <!-- skills Section -->
+    <section id="skills">
+        <!-- Section Badge -->
+        <p class="section-badge">Skills</p>
+
+        <!-- Heading -->
+        <h3 class="section-heading">What I Do Best</h3>
+
+        <!-- Subtext -->
+        <p class="section-subtext">
+            Specialized in crafting high-quality videos, motion graphics, and AI-powered content that drive engagement.
+        </p>
+
+        <!-- Background Glow -->
+        <div class="skills-bg-glow"></div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="card-bg"></div>
+                <div class="card-content">
+                    <h4>Video Editing</h4>
+                    <p>Premiere Pro, DaVinci Resolve</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-bg"></div>
+                <div class="card-content">
+                    <h4>Motion Graphics</h4>
+                    <p>After Effects, Blender</p>
+                </div>
+            </div>
+
+            <div class="skill-card ai-card">
+                <div class="card-bg"></div>
+                <div class="card-content">
+                    <h4>AI Video Editing</h4>
+                    <p>Runway, Adobe Firefly</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-bg"></div>
+                <div class="card-content">
+                    <h4>Reels & Shorts</h4>
+                    <p>Instagram, YouTube Shorts</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-bg"></div>
+                <div class="card-content">
+                    <h4>Color Grading</h4>
+                    <p>Cinematic Look & Mood</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-bg"></div>
+                <div class="card-content">
+                    <h4>Sound Design</h4>
+                    <p>SFX, Music Sync, Clean Audio</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <style>
+        /* ========================
+   SECTION STYLES
+======================== */
+        #skills {
+            position: relative;
+            padding: 0rem 1rem 2rem;
+            background-color: #000000;
+            /* dark bg */
+            scroll-margin-top: 5rem;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            /* to contain glow */
+        }
+
+        .section-badge {
+            display: inline-block;
+            margin-top: 7rem;
+            padding: 0.5rem 2.5rem;
+            border-radius: 9999px;
+            background: rgba(145, 0, 87, 0.7);
+            /* pink-950/70 */
+            border: 1px solid #be185d;
+            /* pink-800 */
+            color: #ec4899;
+            /* pink-600 */
+            font-weight: 500;
+        }
+
+        .section-heading {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .section-subtext {
+            color: #cbd5e1;
+            /* slate-300 */
+            max-width: 40rem;
+            margin: 0.5rem auto 3rem;
+        }
+
+        /* ========================
+   BACKGROUND GLOW
+======================== */
+        .skills-bg-glow {
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 60%;
+            background: radial-gradient(circle at center, rgba(236, 72, 153, 0.25), transparent 70%);
+            filter: blur(150px);
+            z-index: 0;
+        }
+
+        /* ========================
+   GRID STYLES
+======================== */
+        .skills-grid {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 80rem;
+            margin: 0 auto;
+            z-index: 10;
+            /* above background glow */
+        }
+
+        @media (min-width: 640px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* ========================
+   CARD STYLES
+======================== */
+        .skill-card {
+            position: relative;
+            border: 1px solid rgba(156, 27, 96, 0.4);
+            /* pink-900/40 */
+            border-radius: 1.5rem;
+            background-color: #0c0c0c;
+            /* Matches section bg */
+            padding: 1.5rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-0.5rem);
+            border-color: #ec4899;
+            /* pink-600 */
+            box-shadow: 0 0 30px rgba(236, 72, 153, 0.25);
+        }
+
+        /* AI Card Highlight */
+        .ai-card {
+            border-color: #ec4899;
+        }
+
+        .ai-card .card-bg {
+            background: rgba(236, 72, 153, 0.15);
+            filter: blur(10px);
+        }
+
+        /* Hover background glow */
+        .card-bg {
+            position: absolute;
+            inset: 0;
+            border-radius: 1.5rem;
+            background: rgba(236, 72, 153, 0.1);
+            opacity: 0;
+            filter: blur(15px);
+            transition: opacity 0.3s ease;
+            z-index: 0;
+        }
+
+        .skill-card:hover .card-bg {
+            opacity: 1;
+        }
+
+        /* Card content */
+        .card-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .card-content h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .card-content p {
+            font-size: 0.875rem;
+            color: #94a3b8;
+            /* slate-400 */
+            margin-top: 0.5rem;
+        }
+    </style>
+
+    <!-- about section -->
+    <section id="about">
+        <p class="section-badge">About Me</p>
+
+        <!-- <h3 class="section-heading">Who I Am</h3> -->
+
+        <p class="section-subtext">
+            I am Ramu Dowlapalli, a Creative Video Editor, Motion Graphics Designer,
+            and AI Video Editor specializing in cinematic storytelling, motion design,
+            and AI-enhanced video workflows. I help brands, startups, and edutech
+            platforms grow through visually compelling content.
+        </p>
+
+        <div class="about-bg-glow"></div>
+
+        <div class="about-features-container">
+
+            <div class="about-feature">
+                <div class="feature-img-wrap">
+                    <img src="assets/Higher Education.jpg" alt="Education">
+                </div>
+                <h4>Higher Education</h4>
+                <p>Master’s in Computers as part of my higher education background.</p>
+
+            </div>
+
+
+            <div class="about-feature">
+                <div class="feature-img-wrap">
+                    <img src="assets/Core Skills.jpg" alt="Skills">
+                </div>
+                <h4>Core Skills</h4>
+                <p>Video Editing, Motion Graphics, Color Grading, AI Video Editing.</p>
+            </div>
+
+            <div class="about-feature highlight-feature">
+                <div class="feature-img-wrap">
+                    <img src="assets/Professional Experience.jpg" alt="Experience">
+                </div>
+                <h4>Professional Experience</h4>
+                <p>Worked with startups, edutech platforms, and creators.</p>
+            </div>
+
+            <div class="about-feature stat-card">
+                <div class="feature-img-wrap">
+                    <img src="assets/Happy Clients.jpg" alt="Clients">
+                </div>
+                <h4 class="stat-number" data-target="15">0+</h4>
+                <p class="stat-label">Happy Clients</p>
+                <div class="stat-glow"></div>
+            </div>
+
+            <div class="about-feature stat-card">
+                <div class="feature-img-wrap">
+                    <img src="assets/Projects Completed.jpg" alt="Projects">
+                </div>
+                <h4 class="stat-number" data-target="50">0+</h4>
+                <p class="stat-label">Projects Completed</p>
+                <div class="stat-glow"></div>
+            </div>
+
+            <div class="about-feature">
+                <div class="feature-img-wrap">
+                    <img src="assets/Creative Expertise.jpg" alt="Expertise">
+                </div>
+                <h4>Creative Expertise</h4>
+                <p>Cinematic storytelling, AI-enhanced workflows, brand content.</p>
+            </div>
+
+        </div>
+    </section>
+    <style>
+        #about {
+            padding: 0rem 1rem 6rem;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-badge {
+            padding: 0.5rem 2.5rem;
+            border-radius: 9999px;
+            background: rgba(145, 0, 87, 0.7);
+            border: 1px solid #be185d;
+            color: #ec4899;
+            display: inline-block;
+        }
+
+        .section-heading {
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+
+        .section-subtext {
+            max-width: 50rem;
+            margin: 1rem auto 4rem;
+            color: #cbd5e1;
+        }
+
+        .about-bg-glow {
+            position: absolute;
+            inset: -20%;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.2), transparent 70%);
+            filter: blur(140px);
+            z-index: 0;
+        }
+
+        .about-features-container {
+            max-width: 90rem;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 1024px) {
+            .about-features-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .about-features-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-heading {
+                font-size: 1.7rem;
+            }
+
+            .stat-number {
+                font-size: 3rem;
+            }
+        }
+
+        .about-feature {
+            background: #0c0c0c;
+            border: 1px solid rgba(156, 27, 96, 0.4);
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-feature {
+            border-color: #ec4899;
+        }
+
+        .feature-img-wrap {
+            height: 180px;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .feature-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-feature h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .about-feature p {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        .stat-card {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3.8rem;
+            font-weight: 800;
+            color: #ec4899;
+            margin-top: 1.6rem;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #cbd5e1;
+        }
+
+        .stat-glow {
+            position: absolute;
+            inset: -30%;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.2), transparent 70%);
+            filter: blur(110px);
+            animation: pulse 4s infinite ease-in-out;
+            z-index: -1;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.35;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
+    </style>
+    <script>
+        const counters = document.querySelectorAll(".stat-number");
+
+        const animateCounter = (counter) => {
+            const target = +counter.dataset.target;
+            const duration = 1200;
+            const startTime = performance.now();
+
+            const update = (time) => {
+                const progress = Math.min((time - startTime) / duration, 1);
+                const value = Math.floor(progress * target);
+                counter.textContent = value + "+";
+
+                if (progress < 1) requestAnimationFrame(update);
+                else counter.textContent = target + "+";
+            };
+
+            requestAnimationFrame(update);
+        };
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.6 });
+
+        counters.forEach(counter => observer.observe(counter));
+    </script>
+
+    <!-- work Section -->
+    <section id="work">
+        <style>
+            #work {
+                padding: 0rem 1rem 2rem;
+                background-color: #000000;
+                color: white;
+                text-align: center;
+            }
+
+            #work .badge {
+                display: inline-block;
+                font-weight: 500;
+                color: #ec4899;
+                margin-top: 7rem;
+                padding: 0.5rem 2.5rem;
+                border-radius: 9999px;
+                background: rgba(236, 72, 153, 0.1);
+                border: 1px solid #ec4899;
+                margin-bottom: 0rem;
+            }
+
+            #work h3 {
+                font-size: 2rem;
+                font-weight: 600;
+                margin-top: 0rem;
+            }
+
+            #work p.subtext {
+                color: #cbd5e1;
+                max-width: 50ch;
+                margin: 0.5rem auto 3rem;
+            }
+
+            /* Video Cards Grid */
+            .video-grid {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            @media (min-width: 768px) {
+                .video-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (min-width: 1024px) {
+                .video-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            /* Video Card Styling */
+            .video-card {
+                background-color: #111;
+                border: 1px solid rgba(236, 72, 153, 0.4);
+                border-radius: 1rem;
+                overflow: hidden;
+                cursor: pointer;
+                transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+                text-align: left;
+            }
+
+            .video-card:hover {
+                transform: translateY(-5px);
+                border-color: #ec4899;
+                box-shadow: 0 0 25px rgba(236, 72, 153, 0.35);
+            }
+
+            .video-card iframe {
+                width: 100%;
+                height: 180px;
+                border: none;
+                border-bottom: 1px solid rgba(236, 72, 153, 0.4);
+                border-radius: 1rem 1rem 0 0;
+            }
+
+            .video-card .video-content {
+                padding: 1rem;
+            }
+
+            .video-card h4 {
+                font-size: 1.125rem;
+                font-weight: 600;
+                color: white;
+                margin: 0;
+            }
+
+            .video-card p {
+                font-size: 0.875rem;
+                color: #94a3b8;
+                margin-top: 0.25rem;
+            }
+
+            .video-card a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            /* View More Button */
+            .view-more-btn {
+                display: inline-block;
+                margin-top: 3rem;
+                padding: 0.75rem 2rem;
+                font-weight: 600;
+                background-color: #bb016a;
+                color: white;
+                border-radius: 9999px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.3s;
+                text-decoration: none;
+            }
+
+            .view-more-btn:hover {
+                background-color: #d6007a;
+                transform: translateY(-3px);
+            }
+        </style>
+
+        <!-- Section Badge -->
+        <p class="badge">Work</p>
+
+        <!-- Heading -->
+        <!-- <h3>My Work</h3> -->
+
+        <!-- Subtext -->
+        <p class="subtext">
+            Explore some of my videos showcasing editing, motion graphics, and AI-powered creations.
+        </p>
+
+        <!-- Video Cards Grid -->
+        <div class="video-grid">
+
+            <!-- Video Card 1 -->
+            <div class="video-card">
+                <a href="https://youtu.be/5yXPhEX4xJ0?si=5fTN1rHGplWFG1bg" target="_blank" rel="noopener noreferrer">
+
+                    <div class="video-thumb-wrapper">
+                        <img src="https://img.youtube.com/vi/5yXPhEX4xJ0/maxresdefault.jpg" alt="Cinematic Trailer"
+                            class="video-thumbnail" />
+
+                        <!-- YouTube Play Button -->
+                        <div class="youtube-play-btn">▶</div>
+                    </div>
+
+                    <div class="video-content">
+                        <h4>Cinematic Trailer</h4>
+                        <p>
+                            Short cinematic trailer with dynamic shots and motion graphics for storytelling impact.
+                        </p>
+                    </div>
+
+                </a>
+            </div>
+
+            <style>
+                .video-card {
+                    background: #111;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    border: 1px solid rgba(236, 72, 153, 0.4);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+                    max-width: 420px;
+                }
+
+                .video-card:hover {
+                    transform: translateY(-6px);
+                    border-color: #ec4899;
+                    box-shadow: 0 0 30px rgba(236, 72, 153, 0.35);
+                }
+
+                .video-card a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                }
+
+                /* Thumbnail */
+                .video-thumb-wrapper {
+                    position: relative;
+                }
+
+                .video-thumbnail {
+                    width: 100%;
+                    aspect-ratio: 16 / 9;
+                    object-fit: cover;
+                    display: block;
+                }
+
+                /* YouTube Play Button */
+                .youtube-play-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 72px;
+                    height: 50px;
+                    background: #ff0000;
+                    border-radius: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 28px;
+                    padding-left: 4px;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+                    transition: transform 0.25s ease, background 0.25s ease;
+                }
+
+                .video-card:hover .youtube-play-btn {
+                    background: #e60000;
+                    transform: translate(-50%, -50%) scale(1.1);
+                }
+
+                /* Content */
+                .video-content {
+                    padding: 1rem 1.1rem 1.3rem;
+                }
+
+                .video-content h4 {
+                    margin: 0 0 0.35rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+
+                .video-content p {
+                    margin: 0;
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    color: #94a3b8;
+                }
+            </style>
+
+
+            <!-- Video Card 2 -->
+            <div class="video-card">
+                <a href="https://youtube.com/shorts/q23emGc0RKA" target="_blank" rel="noopener noreferrer">
+
+                    <div class="video-thumb-wrapper">
+                        <img src="https://img.youtube.com/vi/q23emGc0RKA/maxresdefault.jpg" alt="Social Media Reel"
+                            class="video-thumbnail" />
+
+                        <!-- YouTube Play Button -->
+                        <div class="youtube-play-btn">▶</div>
+                    </div>
+
+                    <div class="video-content">
+                        <h4>Social Media Reel</h4>
+                        <p>
+                            Engaging reel combining kinetic typography, transitions,
+                            and trending audio for Instagram.
+                        </p>
+                    </div>
+
+                </a>
+            </div>
+
+
+            <style>
+                .video-card {
+                    background: #111;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    border: 1px solid rgba(236, 72, 153, 0.4);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+                    max-width: 420px;
+                }
+
+                .video-card:hover {
+                    transform: translateY(-6px);
+                    border-color: #ec4899;
+                    box-shadow: 0 0 30px rgba(236, 72, 153, 0.35);
+                }
+
+                .video-card a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                }
+
+                /* Thumbnail */
+                .video-thumb-wrapper {
+                    position: relative;
+                }
+
+                .video-thumbnail {
+                    width: 100%;
+                    aspect-ratio: 16 / 9;
+                    object-fit: cover;
+                    display: block;
+                }
+
+                /* YouTube Play Button */
+                .youtube-play-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 72px;
+                    height: 50px;
+                    background: #ff0000;
+                    border-radius: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 28px;
+                    padding-left: 4px;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+                    transition: transform 0.25s ease, background 0.25s ease;
+                }
+
+                .video-card:hover .youtube-play-btn {
+                    background: #e60000;
+                    transform: translate(-50%, -50%) scale(1.1);
+                }
+
+                /* Content */
+                .video-content {
+                    padding: 1rem 1.1rem 1.3rem;
+                }
+
+                .video-content h4 {
+                    margin: 0 0 0.35rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+
+                .video-content p {
+                    margin: 0;
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    color: #94a3b8;
+                }
+            </style>
+
+
+            <!-- Video Card 3 -->
+            <div class="video-card">
+                <a href="https://youtu.be/5yXPhEX4xJ0?si=5fTN1rHGplWFG1bg" target="_blank" rel="noopener noreferrer">
+
+                    <div class="video-thumb-wrapper">
+                        <img src="https://img.youtube.com/vi/5yXPhEX4xJ0/maxresdefault.jpg" alt="Product Explainer"
+                            class="video-thumbnail" />
+
+                        <!-- YouTube Play Button -->
+                        <div class="youtube-play-btn">▶</div>
+                    </div>
+
+                    <div class="video-content">
+                        <h4>Product Explainer</h4>
+                        <p>
+                            Animated explainer video detailing product features
+                            with motion graphics and narration.
+                        </p>
+                    </div>
+
+                </a>
+            </div>
+
+            <style>
+                .video-card {
+                    background: #111;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    border: 1px solid rgba(236, 72, 153, 0.4);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+                    max-width: 420px;
+                }
+
+                .video-card:hover {
+                    transform: translateY(-6px);
+                    border-color: #ec4899;
+                    box-shadow: 0 0 30px rgba(236, 72, 153, 0.35);
+                }
+
+                .video-card a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                }
+
+                /* Thumbnail */
+                .video-thumb-wrapper {
+                    position: relative;
+                }
+
+                .video-thumbnail {
+                    width: 100%;
+                    aspect-ratio: 16 / 9;
+                    object-fit: cover;
+                    display: block;
+                }
+
+                /* YouTube Play Button */
+                .youtube-play-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 72px;
+                    height: 50px;
+                    background: #ff0000;
+                    border-radius: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 28px;
+                    padding-left: 4px;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+                    transition: transform 0.25s ease, background 0.25s ease;
+                }
+
+                .video-card:hover .youtube-play-btn {
+                    background: #e60000;
+                    transform: translate(-50%, -50%) scale(1.1);
+                }
+
+                /* Content */
+                .video-content {
+                    padding: 1rem 1.1rem 1.3rem;
+                }
+
+                .video-content h4 {
+                    margin: 0 0 0.35rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+
+                .video-content p {
+                    margin: 0;
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    color: #94a3b8;
+                }
+            </style>
+
+
+            <!-- Video Card 4 -->
+            <div class="video-card">
+                <a href="https://youtu.be/ZAam7D3Smvo" target="_blank" rel="noopener noreferrer">
+
+                    <div class="video-thumb-wrapper">
+                        <img src="https://img.youtube.com/vi/ZAam7D3Smvo/hqdefault.jpg" alt="AI Editing Demo"
+                            class="video-thumbnail" loading="lazy" />
+
+                        <div class="youtube-play-btn">▶</div>
+                    </div>
+
+                    <div class="video-content">
+                        <h4>AI Editing Demo</h4>
+                        <p>
+                            Demonstration of AI-powered video editing tools for faster
+                            and professional content creation.
+                        </p>
+                    </div>
+
+                </a>
+            </div>
+
+
+            <style>
+                .video-card {
+                    background: #111;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    border: 1px solid rgba(236, 72, 153, 0.4);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+                    max-width: 420px;
+                }
+
+                .video-card:hover {
+                    transform: translateY(-6px);
+                    border-color: #ec4899;
+                    box-shadow: 0 0 30px rgba(236, 72, 153, 0.35);
+                }
+
+                .video-card a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                }
+
+                /* Thumbnail */
+                .video-thumb-wrapper {
+                    position: relative;
+                }
+
+                .video-thumbnail {
+                    width: 100%;
+                    aspect-ratio: 16 / 9;
+                    object-fit: cover;
+                    display: block;
+                }
+
+                /* YouTube Play Button */
+                .youtube-play-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 72px;
+                    height: 50px;
+                    background: #ff0000;
+                    border-radius: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 28px;
+                    padding-left: 4px;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+                    transition: transform 0.25s ease, background 0.25s ease;
+                }
+
+                .video-card:hover .youtube-play-btn {
+                    background: #e60000;
+                    transform: translate(-50%, -50%) scale(1.1);
+                }
+
+                /* Content */
+                .video-content {
+                    padding: 1rem 1.1rem 1.3rem;
+                }
+
+                .video-content h4 {
+                    margin: 0 0 0.35rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+
+                .video-content p {
+                    margin: 0;
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    color: #94a3b8;
+                }
+            </style>
+
+
+            <!-- Video Card 5 -->
+            <div class="video-card">
+                <a href="https://youtu.be/roTvS6pcns0" target="_blank" rel="noopener noreferrer">
+
+                    <div class="video-thumb-wrapper">
+                        <img src="https://img.youtube.com/vi/roTvS6pcns0/maxresdefault.jpg" alt="Prewedding Film"
+                            class="video-thumbnail" />
+
+                        <!-- YouTube Play Button -->
+                        <div class="youtube-play-btn">▶</div>
+                    </div>
+
+                    <div class="video-content">
+                        <h4>Prewedding Film</h4>
+                        <p>
+                            Emotion-driven cinematic prewedding song edits featuring dramatic color grading,
+                            elegant slow-motion sequences, and beautifully synchronized storytelling.
+                        </p>
+                    </div>
+
+                </a>
+            </div>
+
+            <style>
+                /* Video Card */
+                .video-card {
+                    max-width: 420px;
+                    border-radius: 14px;
+                    overflow: hidden;
+                    background: #111;
+                    font-family: Arial, sans-serif;
+                }
+
+                .video-card a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                }
+
+                /* Thumbnail */
+                .video-thumb-wrapper {
+                    position: relative;
+                }
+
+                .video-thumbnail {
+                    width: 100%;
+                    aspect-ratio: 16 / 9;
+                    object-fit: cover;
+                    border-radius: 14px 14px 0 0;
+                }
+
+                /* YouTube Play Button */
+                .youtube-play-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    width: 72px;
+                    height: 50px;
+                    background: #ff0000;
+                    border-radius: 14px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    color: #fff;
+                    font-size: 28px;
+                    padding-left: 4px;
+
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+                    transition: all 0.25s ease;
+                }
+
+                /* Hover Effect */
+                .video-card:hover .youtube-play-btn {
+                    background: #e60000;
+                    transform: translate(-50%, -50%) scale(1.1);
+                }
+
+                /* Content */
+                .video-content {
+                    padding: 14px 16px 18px;
+                }
+
+                .video-content h4 {
+                    margin: 0 0 6px;
+                    font-size: 18px;
+                }
+
+                .video-content p {
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: #ccc;
+                }
+            </style>
+
+
+
+            <!-- Video Card 6 -->
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=YE7VzlLtp-4" target="_blank" rel="noopener noreferrer">
+
+                    <div class="video-thumb-wrapper">
+                        <img src="https://img.youtube.com/vi/YE7VzlLtp-4/maxresdefault.jpg" alt="Brand Promo"
+                            class="video-thumbnail" />
+
+                        <!-- YouTube Play Button -->
+                        <div class="youtube-play-btn">▶</div>
+                    </div>
+
+                    <div class="video-content">
+                        <h4>Brand Promo</h4>
+                        <p>
+                            Promotional video for a brand launch emphasizing storytelling,
+                            color grading, and animation.
+                        </p>
+                    </div>
+
+                </a>
+            </div>
+
+            <style>
+                .video-card {
+                    background: #111;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    border: 1px solid rgba(236, 72, 153, 0.4);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+                    max-width: 420px;
+                }
+
+                .video-card:hover {
+                    transform: translateY(-6px);
+                    border-color: #ec4899;
+                    box-shadow: 0 0 30px rgba(236, 72, 153, 0.35);
+                }
+
+                .video-card a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                }
+
+                /* Thumbnail */
+                .video-thumb-wrapper {
+                    position: relative;
+                }
+
+                .video-thumbnail {
+                    width: 100%;
+                    aspect-ratio: 16 / 9;
+                    object-fit: cover;
+                    display: block;
+                }
+
+                /* YouTube Play Button */
+                .youtube-play-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 72px;
+                    height: 50px;
+                    background: #ff0000;
+                    border-radius: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 28px;
+                    padding-left: 4px;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+                    transition: transform 0.25s ease, background 0.25s ease;
+                }
+
+                .video-card:hover .youtube-play-btn {
+                    background: #e60000;
+                    transform: translate(-50%, -50%) scale(1.1);
+                }
+
+                /* Content */
+                .video-content {
+                    padding: 1rem 1.1rem 1.3rem;
+                }
+
+                .video-content h4 {
+                    margin: 0 0 0.35rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+
+                .video-content p {
+                    margin: 0;
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    color: #94a3b8;
+                }
+            </style>
+
+
+        </div>
+
+        <!-- View More Button -->
+        <a href="https://youtube.com/@ramudowlapalli-123?si=GENnndw0T9cDsF7N" target="_blank" class="view-more-btn">
+            View More
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <style>
+            /* =========================
+       CONTACT SECTION
+    ========================= */
+            #contact {
+                padding: 5rem 1rem 6rem;
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+            }
+
+            #contact .badge {
+                display: inline-block;
+                font-weight: 500;
+                color: #ec4899;
+                padding: 0.5rem 2.5rem;
+                border-radius: 9999px;
+                background: rgba(236, 72, 153, 0.12);
+                border: 1px solid #ec4899;
+                margin-bottom: 1rem;
+            }
+
+            #contact h3 {
+                font-size: 2rem;
+                font-weight: 600;
+                margin-top: 1rem;
+            }
+
+            #contact .subtext {
+                color: #cbd5e1;
+                max-width: 600px;
+                margin: 0.75rem auto 4rem;
+                line-height: 1.6;
+            }
+
+            /* =========================
+       MAIN LAYOUT
+    ========================= */
+            .contact-layout {
+                display: grid;
+                grid-template-columns: 1fr 320px 1fr;
+                gap: 2.5rem;
+                align-items: center;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            @media (max-width: 1024px) {
+                .contact-layout {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            /* =========================
+       CENTER IMAGE
+    ========================= */
+            .contact-image {
+                display: flex;
+                justify-content: center;
+            }
+
+            .contact-image img {
+                width: 100%;
+                max-width: 320px;
+                border-radius: 1.5rem;
+
+
+
+
+                /* Floating animation */
+                animation: floatImage 4s ease-in-out infinite;
+            }
+
+            @keyframes floatImage {
+                0% {
+                    transform: translateY(0px);
+                }
+
+                50% {
+                    transform: translateY(-12px);
+                }
+
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+
+            /* =========================
+       CARD GROUPS
+    ========================= */
+            .card-group {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            /* =========================
+       CONTACT CARD
+    ========================= */
+            .contact-card {
+                background: #111;
+                border: 1px solid rgba(236, 72, 153, 0.4);
+                border-radius: 1rem;
+                padding: 1.8rem;
+                text-align: left;
+                transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            }
+
+            .contact-card:hover {
+                transform: translateY(-6px);
+                border-color: #ec4899;
+                box-shadow: 0 0 30px rgba(236, 72, 153, 0.35);
+            }
+
+            .contact-card .icon {
+                font-size: 1.4rem;
+                color: #ec4899;
+                margin-bottom: 0.8rem;
+            }
+
+            .contact-card h4 {
+                font-size: 1.1rem;
+                margin-bottom: 0.4rem;
+            }
+
+            .contact-card p {
+                font-size: 0.9rem;
+                color: #94a3b8;
+                margin-bottom: 0.6rem;
+            }
+
+            .contact-card span {
+                font-weight: 500;
+                color: #fff;
+                word-break: break-word;
+            }
+
+            /* =========================
+       CTA
+    ========================= */
+            .contact-cta {
+                margin-top: 4.5rem;
+            }
+
+            .contact-cta a {
+                display: inline-block;
+                padding: 0.85rem 2.5rem;
+                background: #bb016a;
+                color: #fff;
+                border-radius: 9999px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: background 0.3s ease, transform 0.3s ease;
+            }
+
+            .contact-cta a:hover {
+                background: #d6007a;
+                transform: translateY(-3px);
+            }
+        </style>
+
+        <!-- Badge -->
+        <p class="badge">Contact</p>
+
+        <!-- Heading -->
+        <h3>Let’s Create Impactful Videos</h3>
+
+        <!-- Subtext -->
+        <p class="subtext">
+            Cinematic video editing, motion graphics, and AI-powered visuals
+            to elevate your brand and content.
+        </p>
+
+        <!-- Layout -->
+        <div class="contact-layout">
+
+            <!-- LEFT CARDS -->
+            <div class="card-group">
+                <div class="contact-card">
+                    <div class="icon">📧</div>
+                    <h4>Email</h4>
+                    <p>Project discussions & collaborations</p>
+                    <span>ramudowlapalli6@gmail.com</span>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon">💼</div>
+                    <h4>Freelance Work</h4>
+                    <p>Brand videos & content creation</p>
+                    <span>Available worldwide</span>
+                </div>
+            </div>
+
+            <!-- CENTER IMAGE -->
+            <div class="contact-image">
+                <img src="assets/contact-image.png" alt="Video Editor Contact" />
+            </div>
+
+            <!-- RIGHT CARDS -->
+            <div class="card-group">
+                <div class="contact-card">
+                    <div class="icon">📞</div>
+                    <h4>Call / WhatsApp</h4>
+                    <p>Quick communication</p>
+                    <span>+91 9014057080</span>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon">⏱️</div>
+                    <h4>Availability</h4>
+                    <p>Freelance & long-term projects</p>
+                    <span>Open for new work</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="contact-cta">
+            <a href="https://youtube.com/@ramudowlapalli-123?si=_Ze25o8nhb9g3j2y" target="_blank">
+                View My Work →
+            </a>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Call to action -->
+    <section id="video-cta">
+        <style>
+            /* =========================
+       VIDEO EDITOR CTA
+    ========================= */
+            #video-cta {
+                margin: 8rem auto 0;
+                padding: 0 1rem;
+                max-width: 1100px;
+            }
+
+            .cta-box {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2rem;
+                padding: 4rem 3rem;
+                border-radius: 1.5rem;
+                background: linear-gradient(to bottom, #7a003c, #3b001f);
+                color: white;
+            }
+
+            .cta-content h1 {
+                font-size: 2.8rem;
+                font-weight: 600;
+                line-height: 1.3;
+                background: linear-gradient(to right, #ffffff, #f9a8d4);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .cta-content p {
+                margin-top: 0.75rem;
+                font-size: 1.1rem;
+                background: linear-gradient(to right, #ffffff, #f9a8d4);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                max-width: 520px;
+            }
+
+            .cta-button {
+                padding: 0.9rem 3rem;
+                border-radius: 9999px;
+                background: white;
+                color: #1e293b;
+                font-size: 0.95rem;
+                font-weight: 600;
+                border: none;
+                cursor: pointer;
+                transition: background 0.3s ease, transform 0.3s ease;
+                white-space: nowrap;
+            }
+
+            .cta-button:hover {
+                background: #e5e7eb;
+                transform: translateY(-3px);
+            }
+
+            /* =========================
+       RESPONSIVE
+    ========================= */
+            @media (max-width: 768px) {
+                .cta-box {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 3rem 2rem;
+                }
+
+                .cta-content h1 {
+                    font-size: 2.2rem;
+                }
+
+                .cta-content p {
+                    font-size: 1rem;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .cta-content h1 {
+                    font-size: 1.9rem;
+                }
+
+                .cta-button {
+                    width: 100%;
+                    padding: 0.85rem 0;
+                }
+            }
+        </style>
+
+        <div class="cta-box">
+            <div class="cta-content">
+                <h1>Ready to elevate your videos?</h1>
+                <p>
+                    Cinematic video editing, motion graphics, and AI-powered visuals
+                    crafted to grow your brand and audience.
+                </p>
+            </div>
+
+            <a href="mailto:ramudowlapalli6@gmail.com?subject=Video%20Editing%20Project&body=Hi%20Ramu,%0A%0AI%20would%20like%20to%20discuss%20a%20video%20editing%20project."
+                class="cta-button">
+                Let’s Work Together
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="video-footer">
+        <style>
+            /* ===== FOOTER BASE ===== */
+            .video-footer {
+                background: #000;
+                color: #9ca3af;
+                padding: 4rem 1.5rem 2rem;
+                font-size: 13px;
+            }
+
+            .footer-container {
+                max-width: 1200px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+            }
+
+            /* ===== TOP SECTION ===== */
+            .footer-top {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                align-items: center;
+            }
+
+            /* ===== LEFT GRID ===== */
+            .footer-left {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.5rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-box h4 {
+                color: #fff;
+                font-weight: 600;
+                margin-bottom: 0.75rem;
+            }
+
+            .footer-box ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .footer-box li {
+                margin-bottom: 0.5rem;
+            }
+
+            .footer-box a {
+                color: #9ca3af;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+            .footer-box a:hover {
+                color: #ec4899;
+            }
+
+            .footer-logo img {
+                width: 32px;
+                margin: auto;
+            }
+
+            /* ===== RIGHT CONTENT ===== */
+            .footer-right {
+                text-align: center;
+                max-width: 360px;
+            }
+
+            .footer-socials {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+
+            .footer-socials a {
+                color: #9ca3af;
+                transition: color 0.3s;
+            }
+
+            .footer-socials a:hover {
+                color: #ec4899;
+            }
+
+            /* ===== DIVIDER ===== */
+            .footer-divider {
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            /* ===== COPYRIGHT ===== */
+            .footer-copy {
+                text-align: center;
+                color: #6b7280;
+                font-size: 12px;
+            }
+
+            /* ===== LARGE SCREENS ===== */
+            @media (min-width: 1024px) {
+                .footer-top {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .footer-left {
+                    grid-template-columns: repeat(4, 1fr);
+                    text-align: left;
+                    max-width: 750px;
+                }
+
+                .footer-right {
+                    text-align: center;
+                }
+
+                .footer-logo img {
+                    margin: 0;
+                }
+            }
+        </style>
+
+        <div class="footer-container">
+
+            <!-- TOP -->
+            <div class="footer-top">
+
+                <!-- LEFT GRID -->
+                <div class="footer-left">
+                    <!-- Logo -->
+                    <div class="footer-box footer-logo">
+                        <a href="#home">
+                            <img src="./assets/favicon logo.png" alt="Video Editor Logo">
+                        </a>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-box">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#work">Video Editing</a></li>
+                            <li><a href="#work">Motion Graphics</a></li>
+                            <li><a href="#work">Reels & Shorts</a></li>
+                            <li><a href="#work">AI Video Editing</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Portfolio -->
+                    <div class="footer-box">
+                        <h4>Portfolio</h4>
+                        <ul>
+                            <li><a href="/">Showreel</a></li>
+                            <li><a href="#work">Brand Videos</a></li>
+                            <li><a href="#work">Social Media Content</a></li>
+                            <li><a href="#work">Client Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Work Info -->
+                    <div class="footer-box">
+                        <h4>Work Info</h4>
+                        <ul>
+                            <li>Freelance Available</li>
+                            <li>Remote & On-site</li>
+                            <li>Worldwide Clients</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="footer-right">
+                    <p>
+                        Crafting cinematic visuals, motion graphics, and AI-powered videos
+                        that elevate brands and captivate audiences.
+                    </p>
+
+                    <div class="footer-socials"
+                        style="display:flex; gap:1rem; margin-top:1rem; justify-content:center;">
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/its_me_rado_/" target="_blank" aria-label="Instagram"
+                            style="display:flex; align-items:center; gap:0.25rem; color:#9ca3af; text-decoration:none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/ramu-dowlapalli-9693a6273/" target="_blank"
+                            aria-label="LinkedIn"
+                            style="display:flex; align-items:center; gap:0.25rem; color:#9ca3af; text-decoration:none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+
+
+                        <!-- YouTube -->
+                        <a href="https://youtube.com/@ramudowlapalli-123?si=GENnndw0T9cDsF7N" target="_blank"
+                            aria-label="YouTube"
+                            style="display:flex; align-items:center; gap:0.25rem; color:#9ca3af; text-decoration:none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z">
+                                </path>
+                                <path d="m10 15 5-3-5-3z"></path>
+                            </svg>
+                            <span>YouTube</span>
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- DIVIDER -->
+            <div class="footer-divider"></div>
+
+            <!-- COPYRIGHT -->
+            <p class="footer-copy">
+                © 2026 <span style="color:#e5e7eb;">Ramu Dowlapalli</span> · Video Editor & Motion Designer
+            </p>
+
+        </div>
+    </footer>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
